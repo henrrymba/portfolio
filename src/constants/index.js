@@ -2,59 +2,59 @@ import { Briefcase, GraduationCap, Code, Rocket } from "lucide-react";
 
 const experiences = [
   {
-    id: 'exp-1',
-    company: 'Universidad Autónoma de Madrid',
-    role: 'Bachelor\'s Degree in Economics',
-    period: 'September 2020 - June 2022',
+    id: "exp-1",
+    company: "Universidad Autónoma de Madrid",
+    role: "Bachelor's Degree in Economics",
+    period: "September 2020 - June 2022",
     description: [
-      'University education in economics and data analysis.',
-      'Development of analytical skills and critical thinking.',
-      'Study of microeconomics, macroeconomics, and quantitative methods.',
-      'Solid foundation in complex problem-solving and decision-making.'
+      "University education in economics and data analysis.",
+      "Development of analytical skills and critical thinking.",
+      "Study of microeconomics, macroeconomics, and quantitative methods.",
+      "Solid foundation in complex problem-solving and decision-making.",
     ],
-    color: '#8B5CF6',
+    color: "#8B5CF6",
     Icon: GraduationCap,
   },
   {
-    id: 'exp-2',
-    company: 'ESIC Business & Marketing School',
-    role: 'Higher Degree in Web Application Development',
-    period: 'September 2022 - June 2024',
+    id: "exp-2",
+    company: "ESIC Business & Marketing School",
+    role: "Higher Degree in Web Application Development",
+    period: "September 2022 - June 2024",
     description: [
-      'Web Application Development - Specialized technical training.',
-      'Learning frontend technologies (HTML, CSS, JavaScript, modern frameworks).',
-      'Backend development with databases, REST APIs, and web architectures.',
-      'Practical full stack development projects and professional methodologies.'
+      "Web Application Development - Specialized technical training.",
+      "Learning frontend technologies (HTML, CSS, JavaScript, modern frameworks).",
+      "Backend development with databases, REST APIs, and web architectures.",
+      "Practical full stack development projects and professional methodologies.",
     ],
-    color: '#3B82F6',
+    color: "#3B82F6",
     Icon: GraduationCap,
   },
   {
-    id: 'exp-3',
-    company: 'Neoris',
-    role: 'Frontend Developer (Internship)',
-    period: 'March 2024 - June 2024',
+    id: "exp-3",
+    company: "Neoris",
+    role: "Frontend Developer (Internship)",
+    period: "March 2024 - June 2024",
     description: [
-      'Internship as a junior frontend developer at a technology consultancy.',
-      'Development of enterprise applications using Angular as the main framework.',
-      'Collaboration with development teams using agile methodologies.',
-      'Implementation of reusable components and frontend architecture improvements.'
+      "Internship as a junior frontend developer at a technology consultancy.",
+      "Development of enterprise applications using Angular as the main framework.",
+      "Collaboration with development teams using agile methodologies.",
+      "Implementation of reusable components and frontend architecture improvements.",
     ],
-    color: '#F59E0B',
+    color: "#F59E0B",
     Icon: Briefcase,
   },
   {
-    id: 'exp-4',
-    company: 'Derepente Madrid',
-    role: 'Full Stack Developer',
-    period: 'June 2024 - Present',
+    id: "exp-4",
+    company: "Derepente Madrid",
+    role: "Full Stack Developer",
+    period: "June 2024 - Present",
     description: [
-      'Development of internal and client web solutions at a marketing and advertising agency.',
-      'Implementation of applications with Next.js, Tailwind CSS, Node.js, and Express.',
-      'Integration of backend services like Appwrite, Supabase, Firebase, and Stripe for payments and authentication.',
-      'Collaboration on digital marketing projects with a focus on performance and user experience.'
+      "Development of internal and client web solutions at a marketing and advertising agency.",
+      "Implementation of applications with Next.js, Tailwind CSS, Node.js, and Express.",
+      "Integration of backend services like Appwrite, Supabase, Firebase, and Stripe for payments and authentication.",
+      "Collaboration on digital marketing projects with a focus on performance and user experience.",
     ],
-    color: '#10B981',
+    color: "#10B981",
     Icon: Rocket,
   },
 ];
@@ -186,7 +186,63 @@ const socials = [
   },
 ];
 
-export { navLinks, navIcons, dockApps, techStack, socials, experiences };
+const photosLinks = [
+  {
+    id: 1,
+    icon: "/icons/gicon1.svg",
+    title: "Library",
+  },
+  {
+    id: 2,
+    icon: "/icons/gicon2.svg",
+    title: "Memories",
+  },
+  {
+    id: 3,
+    icon: "/icons/file.svg",
+    title: "Places",
+  },
+  {
+    id: 4,
+    icon: "/icons/gicon4.svg",
+    title: "People",
+  },
+  {
+    id: 5,
+    icon: "/icons/gicon5.svg",
+    title: "Favorites",
+  },
+];
+
+const gallery = [
+  {
+    id: 1,
+    img: "/images/photography-project-group.jpeg",
+  },
+  {
+    id: 2,
+    img: "/images/me-street-photo.JPG",
+  },
+  {
+    id: 3,
+    img: "/images/gsap-apple.jpeg",
+  },
+  {
+    id: 4,
+    img: "memoji.png",
+  },
+];
+
+export {
+  navLinks,
+  navIcons,
+  dockApps,
+  techStack,
+  socials,
+  experiences,
+  photosLinks,
+  gallery,
+};
 
 const WORK_LOCATION = {
   id: 1,
