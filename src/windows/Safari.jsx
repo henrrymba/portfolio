@@ -1,4 +1,4 @@
-import { WindowControls } from "#components";
+import { WindowControls, Experience } from "#components";
 import WindowWrapper from "#hoc/WindowWrapper.jsx";
 import {
   ChevronLeft,
@@ -43,10 +43,12 @@ const Safari = () => {
           <Copy className="icon" />
         </div>
       </div>
-      <div className="blog">
+      <div className="blog max-h-[600px] overflow-y-auto overflow-x-hidden">
         <h2>My experience</h2>
+        <div className="space-y-8">
+          <Experience />
+        </div>
 
-        <div className="space-y-8"></div>
       </div>
     </>
   );

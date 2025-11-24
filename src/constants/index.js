@@ -1,3 +1,64 @@
+import { Briefcase, GraduationCap, Code, Rocket } from "lucide-react";
+
+const experiences = [
+  {
+    id: 'exp-1',
+    company: 'Universidad Autónoma de Madrid',
+    role: 'Bachelor\'s Degree in Economics',
+    period: 'September 2020 - June 2022',
+    description: [
+      'University education in economics and data analysis.',
+      'Development of analytical skills and critical thinking.',
+      'Study of microeconomics, macroeconomics, and quantitative methods.',
+      'Solid foundation in complex problem-solving and decision-making.'
+    ],
+    color: '#8B5CF6',
+    Icon: GraduationCap,
+  },
+  {
+    id: 'exp-2',
+    company: 'ESIC Business & Marketing School',
+    role: 'Higher Degree in Web Application Development',
+    period: 'September 2022 - June 2024',
+    description: [
+      'Web Application Development - Specialized technical training.',
+      'Learning frontend technologies (HTML, CSS, JavaScript, modern frameworks).',
+      'Backend development with databases, REST APIs, and web architectures.',
+      'Practical full stack development projects and professional methodologies.'
+    ],
+    color: '#3B82F6',
+    Icon: GraduationCap,
+  },
+  {
+    id: 'exp-3',
+    company: 'Neoris',
+    role: 'Frontend Developer (Internship)',
+    period: 'March 2024 - June 2024',
+    description: [
+      'Internship as a junior frontend developer at a technology consultancy.',
+      'Development of enterprise applications using Angular as the main framework.',
+      'Collaboration with development teams using agile methodologies.',
+      'Implementation of reusable components and frontend architecture improvements.'
+    ],
+    color: '#F59E0B',
+    Icon: Briefcase,
+  },
+  {
+    id: 'exp-4',
+    company: 'Derepente Madrid',
+    role: 'Full Stack Developer',
+    period: 'June 2024 - Present',
+    description: [
+      'Development of internal and client web solutions at a marketing and advertising agency.',
+      'Implementation of applications with Next.js, Tailwind CSS, Node.js, and Express.',
+      'Integration of backend services like Appwrite, Supabase, Firebase, and Stripe for payments and authentication.',
+      'Collaboration on digital marketing projects with a focus on performance and user experience.'
+    ],
+    color: '#10B981',
+    Icon: Rocket,
+  },
+];
+
 const navLinks = [
   {
     id: 1,
@@ -125,7 +186,7 @@ const socials = [
   },
 ];
 
-export { navLinks, navIcons, dockApps, techStack, socials };
+export { navLinks, navIcons, dockApps, techStack, socials, experiences };
 
 const WORK_LOCATION = {
   id: 1,
@@ -141,7 +202,7 @@ const WORK_LOCATION = {
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-10 left-5",
-      windowPosition: "top-[5vh] left-5",
+      windowPosition: "top-[50vh] left-5",
       children: [
         {
           id: 1,
@@ -184,7 +245,7 @@ const WORK_LOCATION = {
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-52 right-80",
-      windowPosition: "top-[20vh] left-7",
+      windowPosition: "top-[20vh] right-70",
       children: [
         {
           id: 1,
@@ -227,7 +288,7 @@ const WORK_LOCATION = {
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-10 left-80",
-      windowPosition: "top-[33vh] left-7",
+      windowPosition: "top-[3vh] left-200",
       children: [
         {
           id: 1,
