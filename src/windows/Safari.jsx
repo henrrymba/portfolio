@@ -44,7 +44,7 @@ const Safari = () => {
         </div>
       </div>
       <div className="blog">
-        <h2>My developer Blog</h2>
+        <h2>My experience</h2>
 
         <div className="space-y-8"></div>
       </div>

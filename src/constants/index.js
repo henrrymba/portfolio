@@ -101,7 +101,31 @@ const techStack = [
   },
 ];
 
-export { navLinks, navIcons, dockApps, techStack };
+const socials = [
+  {
+    id: 1,
+    text: "Github",
+    icon: "/icons/github.svg",
+    bg: "#f4656b",
+    link: "https://github.com/henrrymba",
+  },
+  {
+    id: 2,
+    text: "Platform",
+    icon: "/icons/atom.svg",
+    bg: "#4bcb63",
+    link: "https://henrry.es/",
+  },
+  {
+    id: 3,
+    text: "LinkedIn",
+    icon: "/icons/linkedin.svg",
+    bg: "#05b6f6",
+    link: "https://www.linkedin.com/in/henrrymb/",
+  },
+];
+
+export { navLinks, navIcons, dockApps, techStack, socials };
 
 const WORK_LOCATION = {
   id: 1,
@@ -110,10 +134,10 @@ const WORK_LOCATION = {
   icon: "/icons/work.svg",
   kind: "folder",
   children: [
-    // ▶ Project 1 (Fake Data)
+    // ▶ Project 1
     {
       id: 5,
-      name: "Fake Social Media App",
+      name: "GSAP Apple",
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-10 left-5",
@@ -121,52 +145,42 @@ const WORK_LOCATION = {
       children: [
         {
           id: 1,
-          name: "FakeApp_Readme.txt",
+          name: "AppleGSAP_Readme.txt",
           icon: "/images/txt.png",
           kind: "file",
           fileType: "txt",
           position: "top-5 left-10",
           description: [
-            "This is a dummy social media application. It doesn't do anything real.",
-            "It's built with imaginary technologies and designed for fictional users.",
-            "Features include posting fake updates and connecting with non-existent friends.",
-            "Just pretend it's awesome!",
+            "Apple-style 3D website built with React, Three.js, GSAP, and TailwindCSS.",
+            "Showcase products in immersive 3D scenes, scroll-animated models, and pinned sections.",
+            "Featuring responsive design, smooth timeline animations, and visually striking image transitions.",
           ],
         },
         {
           id: 2,
-          name: "fakeapp.io",
+          name: "apple-gsap.vercel.app",
           icon: "/images/safari.png",
           kind: "file",
           fileType: "url",
-          href: "https://www.youtube.com/watch?v=dQw4w9WgXcQ", // Rick Astley for fake URL
+          href: "https://gsap-apple-iota.vercel.app/",
           position: "top-10 right-20",
         },
         {
           id: 4,
-          name: "fake_screenshot.png",
+          name: "screenshot.png",
           icon: "/images/image.png",
           kind: "file",
           fileType: "img",
           position: "top-52 right-80",
-          imageUrl: "/images/image.png", // Using a generic image
-        },
-        {
-          id: 5,
-          name: "FakeDesign.fig",
-          icon: "/images/plain.png",
-          kind: "file",
-          fileType: "fig",
-          href: "https://www.figma.com/file/fake-design-link",
-          position: "top-60 right-20",
+          imageUrl: "/images/gsap_apple.jpeg",
         },
       ],
     },
 
-    // ▶ Project 2 (Fake Data)
+    // ▶ Project 2
     {
       id: 6,
-      name: "Placeholder E-commerce Platform",
+      name: "Signalist",
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-52 right-80",
@@ -174,52 +188,42 @@ const WORK_LOCATION = {
       children: [
         {
           id: 1,
-          name: "Shop_Info.txt",
+          name: "Signalist_Info.txt",
           icon: "/images/txt.png",
           kind: "file",
           fileType: "txt",
           position: "top-5 right-10",
           description: [
-            "A pretend e-commerce site for selling imaginary products.",
-            "It boasts features like a non-functional shopping cart and fake payment processing.",
-            "Built with 'React-ish' and 'Node-ish' technologies for demonstration purposes.",
-            "Warning: No actual transactions will occur.",
+            "AI-powered modern stock market app built with Next.js, Shadcn, Better Auth, and Inngest!",
+            "Track real-time prices, set personalized alerts, explore company insights, and manage watchlists.",
+            "Event-driven workflows power automated alerts, AI-driven daily digests, and sentiment analysis.",
           ],
         },
         {
           id: 2,
-          name: "buynothing.store",
+          name: "signalist.vercel.app",
           icon: "/images/safari.png",
           kind: "file",
           fileType: "url",
-          href: "https://example.com/not-a-real-shop",
+          href: "https://signalist-stock-tracker-app-inky.vercel.app/sign-in",
           position: "top-20 left-20",
         },
         {
           id: 4,
-          name: "shop_display.png",
+          name: "screenshot.png",
           icon: "/images/image.png",
           kind: "file",
           fileType: "img",
           position: "top-52 left-80",
-          imageUrl: "/images/image.png", // Using a generic image
-        },
-        {
-          id: 5,
-          name: "ShopWireframe.fig",
-          icon: "/images/plain.png",
-          kind: "file",
-          fileType: "fig",
-          href: "https://www.figma.com/file/fake-ecommerce-design",
-          position: "top-60 left-5",
+          imageUrl: "/images/signalist.jpeg",
         },
       ],
     },
 
-    // ▶ Project 3 (Fake Data)
+    // ▶ Project 3
     {
       id: 7,
-      name: "Mockup Portfolio Site",
+      name: "SnapCast",
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-10 left-80",
@@ -227,45 +231,87 @@ const WORK_LOCATION = {
       children: [
         {
           id: 1,
-          name: "Portfolio_Concept.txt",
+          name: "SnapCast_Concept.txt",
           icon: "/images/txt.png",
           kind: "file",
           fileType: "txt",
           position: "top-5 left-10",
           description: [
-            "This is a theoretical portfolio site, showcasing projects that don't exist.",
-            "It's designed to look professional, but all content is purely illustrative.",
-            "Features include dummy project galleries and a non-responsive contact form.",
-            "Made with 'HTML-like' and 'CSS-like' code.",
+            "Full Stack Screen Recording & Video Sharing Platform built with Next.js and Bunny.net.",
+            "Includes user authentication, screen recording, video uploads, and AI-generated transcripts.",
+            "Users can set videos as public or private and share them via a link.",
           ],
         },
         {
           id: 2,
-          name: "myfakeportfolio.dev",
+          name: "snapcast.vercel.app",
           icon: "/images/safari.png",
           kind: "file",
           fileType: "url",
-          href: "https://www.google.com/search?q=fake+portfolio",
+          href: "https://screen-recording-jp9y02yvj-henrrymbas-projects.vercel.app/sign-in",
           position: "top-10 right-20",
         },
         {
           id: 4,
-          name: "portfolio_hero.png",
+          name: "screenshot.png",
           icon: "/images/image.png",
           kind: "file",
           fileType: "img",
           position: "top-52 right-80",
-          imageUrl: "/images/image.png", // Using a generic image
+          imageUrl: "/images/snapcast.jpeg",
         },
-        {
-          id: 5,
-          name: "PortfolioSketch.fig",
-          icon: "/images/plain.png",
-          kind: "file",
-          fileType: "fig",
-          href: "https://www.figma.com/file/fake-portfolio-wireframe",
-          position: "top-60 right-20",
-        },
+      ],
+    },
+  ],
+};
+
+const ABOUT_LOCATION = {
+  id: 2,
+  type: "about",
+  name: "About me",
+  icon: "/icons/info.svg",
+  kind: "folder",
+  children: [
+    {
+      id: 1,
+      name: "me.jpeg",
+      icon: "/images/image.png",
+      kind: "file",
+      fileType: "img",
+      position: "top-10 left-5",
+      imageUrl: "/images/me.jpeg",
+    },
+    {
+      id: 2,
+      name: "me-street-photo.jpeg",
+      icon: "/images/image.png",
+      kind: "file",
+      fileType: "img",
+      position: "top-28 right-72",
+      imageUrl: "/images/me-street-photo.JPG",
+    },
+    {
+      id: 3,
+      name: "photography-project-group.jpeg",
+      icon: "/images/image.png",
+      kind: "file",
+      fileType: "img",
+      position: "top-52 left-80",
+      imageUrl: "/images/photography-project-group.jpeg",
+    },
+    {
+      id: 4,
+      name: "about-me.txt",
+      icon: "/images/txt.png",
+      kind: "file",
+      fileType: "txt",
+      position: "top-60 left-5",
+      subtitle: "Meet the Developer Behind the Code",
+      description: [
+        "Hey! I’m Henrry 👋, a web developer who enjoys building sleek, interactive websites that actually work well.",
+        "I specialize in JavaScript, React, and Next.js, but I also love diving into the backend with Node.js and designing database schemas that don't fall apart 😅.",
+        "I’m big on clean UI, good UX, and writing code that’s not a complete nightmare to debug.",
+        "Outside of dev work, you'll find me trying to get the perfect shot with my camera 📸, going for a run to clear my head 🏃‍♂️, or drooling over the latest tech gadgets I probably don't need 💸.",
       ],
     },
   ],
@@ -318,6 +364,7 @@ const TRASH_LOCATION = {
 
 export const locations = {
   work: WORK_LOCATION,
+  about: ABOUT_LOCATION,
   resume: RESUME_LOCATION,
   trash: TRASH_LOCATION,
 };
