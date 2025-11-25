@@ -1,38 +1,16 @@
-import gsap from "gsap";
-import { Draggable } from "gsap/Draggable";
-
-import { Dock, Home, Navbar, Welcome } from "#components";
-import {
-  Finder,
-  Resume,
-  Safari,
-  Terminal,
-  Text,
-  Image,
-  Contact,
-  Photos,
-} from "#windows";
-
-gsap.registerPlugin(Draggable);
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Landing } from "./pages/Landing";
+import Desktop from "./pages/Desktop";
 
 const App = () => {
   return (
-    <main>
-      <Navbar />
-      <Welcome />
-      <Dock />
-
-      <Terminal />
-      <Safari />
-      <Resume />
-      <Finder />
-      <Text />
-      <Image />
-      <Contact />
-      <Photos />
-
-      <Home />
-    </main>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Landing />} />
+        <Route path="/portfolio" element={<Desktop />} />
+      </Routes>
+    </BrowserRouter>
   );
 };
 export default App;
