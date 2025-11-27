@@ -131,7 +131,7 @@ const dockApps = [
     id: "trash",
     name: "Archive",
     icon: "trash.png",
-    canOpen: false,
+    canOpen: true,
   },
 ];
 
@@ -251,7 +251,6 @@ const WORK_LOCATION = {
   icon: "/icons/work.svg",
   kind: "folder",
   children: [
-    // ▶ Project 1
     {
       id: 5,
       name: "GSAP Apple",
@@ -294,7 +293,6 @@ const WORK_LOCATION = {
       ],
     },
 
-    // ▶ Project 2
     {
       id: 6,
       name: "Signalist",
@@ -337,7 +335,6 @@ const WORK_LOCATION = {
       ],
     },
 
-    // ▶ Project 3
     {
       id: 7,
       name: "SnapCast",
@@ -380,7 +377,6 @@ const WORK_LOCATION = {
       ],
     },
 
-    // ▶ Project 4 (Tourvisto)
     {
       id: 8,
       name: "Tourvisto",
