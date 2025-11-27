@@ -19,7 +19,7 @@ const Contact = () => {
         <h3>{t("contact.connect")}</h3>
         <p>{t("contact.description")}</p>
         <p>
-          <a href="mailto:contact@henrry.es">contact@henrry.es</a>
+          <a href="mailto:contacto@henrry.es">contacto@henrry.es</a>
         </p>
         <p>
           <a href="tel:+34722464208">+34 722 464 208</a>
