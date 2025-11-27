@@ -2,24 +2,27 @@ import WindowWrapper from "#hoc/WindowWrapper.jsx";
 import { techStack } from "#constants/index.js";
 import { Check, Flag } from "lucide-react";
 import WindowControls from "#components/WindowControls.jsx";
+import { useTranslation } from "react-i18next";
 
 const Terminal = () => {
+  const { t } = useTranslation();
+
   return (
     <>
       <div id="window-header">
         <WindowControls target="terminal" />
-        <h2>Tech Stack</h2>
+        <h2>{t("terminal.techStack")}</h2>
       </div>
 
       <div className="techstack">
         <p>
           <span className="font-bold">@henrry % </span>
-          show teck stack
+          {t("terminal.showStack")}
         </p>
 
         <div className="label">
-          <p className="w-32">Category</p>
-          <p>Technologies</p>
+          <p className="w-32">{t("terminal.category")}</p>
+          <p>{t("terminal.technologies")}</p>
         </div>
 
         <ul className="content">
@@ -39,11 +42,11 @@ const Terminal = () => {
         </ul>
         <div className="footnote">
           <p>
-            <Check size={20} /> 6 of 6 stacks loaded successfully (100%)
+            <Check size={20} /> 6 of 6 {t("terminal.loaded")} (100%)
           </p>
           <p className="text-black">
             <Flag size={20} fill="black" />
-            Render time: 4ms
+            {t("terminal.renderTime")}: 4ms
           </p>
         </div>
       </div>

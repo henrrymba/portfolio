@@ -1,0 +1,145 @@
+{
+  "header": {
+    "portfolio": "Portfolio",
+    "downloadCV": "Descargar CV"
+  },
+  "navbar": {
+    "finder": "Proyectos",
+    "contact": "Contacto",
+    "resume": "Currículum"
+  },
+  "hero": {
+    "title": "Arquitecto de Software",
+    "subtitle": "Construyendo soluciones escalables"
+  },
+  "welcome": {
+    "subtitle": "¿Ves? No bromeaba con lo de ser fanboy de Apple. Bienvenido a mi",
+    "title": "portfolio",
+    "mobileMessage": "Este portafolio está diseñado para pantallas de escritorio/tablet"
+  },
+  "dock": {
+    "finder": "Portfolio",
+    "safari": "Artículos",
+    "photos": "Galería",
+    "contact": "Contacto",
+    "terminal": "Habilidades",
+    "trash": "Archivo"
+  },
+  "finder": {
+    "favourites": "Favoritos",
+    "myProjects": "Mis Proyectos",
+    "folders": {
+      "work": "Trabajo",
+      "about": "Sobre mí",
+      "resume": "Currículum",
+      "trash": "Papelera"
+    }
+  },
+  "safari": {
+    "experience": "Mi experiencia",
+    "searchPlaceholder": "Buscar o introducir nombre del sitio web"
+  },
+  "photos": {
+    "library": "Biblioteca",
+    "memories": "Recuerdos",
+    "places": "Lugares",
+    "people": "Personas",
+    "favorites": "Favoritos",
+    "title": "Fotos"
+  },
+  "terminal": {
+    "techStack": "Stack Tecnológico",
+    "showStack": "mostrar stack tecnológico",
+    "category": "Categoría",
+    "technologies": "Tecnologías",
+    "loaded": "stacks cargados correctamente",
+    "renderTime": "Tiempo de renderizado"
+  },
+  "contact": {
+    "title": "Contáctame",
+    "connect": "Conectemos",
+    "description": "¿Tienes alguna idea? ¿Un bug que resolver? ¿O simplemente quieres hablar de tecnología? Contactame."
+  },
+  "portfolioWidget": {
+    "connect": "Conectar",
+    "frontend": "Desarrollador",
+    "developer": "Front End"
+  },
+  "experience": {
+    "responsibilities": "Responsabilidades",
+    "exp-1": {
+      "role": "Grado en Economía",
+      "description": [
+        "Formación universitaria en economía y análisis de datos.",
+        "Desarrollo de habilidades analíticas y pensamiento crítico.",
+        "Estudio de microeconomía, macroeconomía y métodos cuantitativos.",
+        "Base sólida en resolución de problemas complejos y toma de decisiones."
+      ]
+    },
+    "exp-2": {
+      "role": "Grado Superior en Desarrollo de Aplicaciones Web",
+      "description": [
+        "Desarrollo de Aplicaciones Web - Formación técnica especializada.",
+        "Aprendizaje de tecnologías frontend (HTML, CSS, JavaScript, frameworks modernos).",
+        "Desarrollo backend con bases de datos, APIs REST y arquitecturas web.",
+        "Proyectos prácticos de desarrollo full stack y metodologías profesionales."
+      ]
+    },
+    "exp-3": {
+      "role": "Desarrollador Frontend (Prácticas)",
+      "description": [
+        "Prácticas como desarrollador frontend junior en una consultora tecnológica.",
+        "Desarrollo de aplicaciones empresariales utilizando Angular como framework principal.",
+        "Colaboración con equipos de desarrollo utilizando metodologías ágiles.",
+        "Implementación de componentes reutilizables y mejoras en la arquitectura frontend."
+      ]
+    },
+    "exp-4": {
+      "role": "Desarrollador Full Stack",
+      "description": [
+        "Desarrollo de soluciones web internas y para clientes en una agencia de marketing y publicidad.",
+        "Implementación de aplicaciones con Next.js, Tailwind CSS, Node.js y Express.",
+        "Integración de servicios backend como Appwrite, Supabase, Firebase y Stripe para pagos y autenticación.",
+        "Colaboración en proyectos de marketing digital con enfoque en rendimiento y experiencia de usuario."
+      ]
+    }
+  },
+  "about": {
+    "subtitle": "Conoce al desarrollador detrás del código",
+    "desc": {
+      "0": "¡Hola! Soy Henrry 👋, un desarrollador web que disfruta construyendo sitios web elegantes e interactivos que realmente funcionan bien.",
+      "1": "Me especializo en JavaScript, React y Next.js, pero también me encanta sumergirme en el backend con Node.js y diseñar esquemas de bases de datos que no se desmoronen 😅.",
+      "2": "Me importa mucho una interfaz limpia, una buena experiencia de usuario y escribir código que no sea una pesadilla para depurar.",
+      "3": "Fuera del trabajo de desarrollo, me encontrarás intentando conseguir la toma perfecta con mi cámara 📸, saliendo a correr para despejar la mente 🏃‍♂️, o babeando por los últimos gadgets tecnológicos que probablemente no necesito 💸."
+    }
+  },
+  "projects": {
+    "gsap": {
+      "desc": {
+        "0": "Sitio web 3D estilo Apple construido con React, Three.js, GSAP y TailwindCSS.",
+        "1": "Muestra productos en escenas 3D inmersivas, modelos animados por desplazamiento y secciones fijadas.",
+        "2": "Con diseño responsivo, animaciones suaves de línea de tiempo y transiciones de imagen visualmente impactantes."
+      }
+    },
+    "signalist": {
+      "desc": {
+        "0": "¡Aplicación moderna de mercado de valores impulsada por IA construida con Next.js, Shadcn, Better Auth e Inngest!",
+        "1": "Rastrea precios en tiempo real, configura alertas personalizadas, explora información de empresas y gestiona listas de seguimiento.",
+        "2": "Flujos de trabajo impulsados por eventos potencian alertas automatizadas, resúmenes diarios impulsados por IA y análisis de sentimiento."
+      }
+    },
+    "snapcast": {
+      "desc": {
+        "0": "Plataforma Full Stack de grabación de pantalla y uso compartido de videos construida con Next.js y Bunny.net.",
+        "1": "Incluye autenticación de usuarios, grabación de pantalla, carga de videos y transcripciones generadas por IA.",
+        "2": "Los usuarios pueden configurar videos como públicos o privados y compartirlos a través de un enlace."
+      }
+    },
+    "tourvisto": {
+      "desc": {
+        "0": "Una plataforma moderna de agencia de viajes con panel de administración y sitio público. Genera itinerarios de viaje impulsados por IA basados en país, estilo de viaje, intereses, tipo de grupo y presupuesto, y reserva viajes con facilidad.",
+        "1": "Características: Generador de itinerarios de viaje con IA, Funcionalidad de reserva de viajes, Panel de administración con gestión de viajes y usuarios, Métricas de crecimiento de usuarios y análisis de viajes, Gráficos interactivos y tabla de estadísticas de viajes, Resumen detallado del viaje, Interfaz de usuario adaptable con diseño moderno, Autenticación segura de usuarios y gestión de datos, Arquitectura de código modular con componentes reutilizables."
+      }
+    }
+  }
+}

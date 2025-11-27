@@ -1,11 +1,14 @@
 import React from "react";
 import { Github, Linkedin } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 export const PortfolioWidget: React.FC = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="fixed bottom-8 left-8 z-40 hidden lg:flex flex-col gap-4 w-40 pointer-events-none select-none">
       <div className="text-[10px] font-bold tracking-widest text-gray-500 uppercase mb-2">
-        Connect
+        {t("portfolioWidget.connect")}
       </div>
 
       <div className="border border-gray-200 bg-white/80 backdrop-blur-sm p-4 rounded-lg shadow-sm pointer-events-auto">
@@ -42,9 +45,11 @@ export const PortfolioWidget: React.FC = () => {
         </div>
         <div className="flex flex-col">
           <span className="text-[9px] uppercase font-bold text-gray-400">
-            FRONT END
+            {t("portfolioWidget.frontend")}
           </span>
-          <span className="text-[9px] uppercase font-bold">Developer</span>
+          <span className="text-[9px] uppercase font-bold">
+            {t("portfolioWidget.developer")}
+          </span>
         </div>
       </div>
     </div>

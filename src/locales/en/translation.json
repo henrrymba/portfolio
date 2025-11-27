@@ -1,0 +1,145 @@
+{
+  "header": {
+    "portfolio": "Portfolio",
+    "downloadCV": "Download CV"
+  },
+  "navbar": {
+    "finder": "Projects",
+    "contact": "Contact",
+    "resume": "Resume"
+  },
+  "hero": {
+    "title": "Software Architect",
+    "subtitle": "Building scalable solutions"
+  },
+  "welcome": {
+    "subtitle": "See? I wasn't kidding about the Apple fanboy thing. Welcome to my",
+    "title": "portfolio",
+    "mobileMessage": "This Portfolio is designed for desktop/tablet screens"
+  },
+  "dock": {
+    "finder": "Portfolio",
+    "safari": "Articles",
+    "photos": "Gallery",
+    "contact": "Contact",
+    "terminal": "Skills",
+    "trash": "Archive"
+  },
+  "finder": {
+    "favourites": "Favourites",
+    "myProjects": "My Projects",
+    "folders": {
+      "work": "Work",
+      "about": "About me",
+      "resume": "Resume",
+      "trash": "Trash"
+    }
+  },
+  "safari": {
+    "experience": "My experience",
+    "searchPlaceholder": "Search or enter website name"
+  },
+  "photos": {
+    "library": "Library",
+    "memories": "Memories",
+    "places": "Places",
+    "people": "People",
+    "favorites": "Favorites",
+    "title": "Photos"
+  },
+  "terminal": {
+    "techStack": "Tech Stack",
+    "showStack": "show teck stack",
+    "category": "Category",
+    "technologies": "Technologies",
+    "loaded": "stacks loaded successfully",
+    "renderTime": "Render time"
+  },
+  "contact": {
+    "title": "Contact Me",
+    "connect": "Let's Connect",
+    "description": "Got an idea? A bug to squash? Or just wanna talk tech? I'm in."
+  },
+  "portfolioWidget": {
+    "connect": "Connect",
+    "frontend": "FRONT END",
+    "developer": "Developer"
+  },
+  "experience": {
+    "responsibilities": "Responsibilities",
+    "exp-1": {
+      "role": "Bachelor's Degree in Economics",
+      "description": [
+        "University education in economics and data analysis.",
+        "Development of analytical skills and critical thinking.",
+        "Study of microeconomics, macroeconomics, and quantitative methods.",
+        "Solid foundation in complex problem-solving and decision-making."
+      ]
+    },
+    "exp-2": {
+      "role": "Advanced Vocational Diploma in Web Application Development",
+      "description": [
+        "Web Application Development - Specialized technical training.",
+        "Learning frontend technologies (HTML, CSS, JavaScript, modern frameworks).",
+        "Backend development with databases, REST APIs, and web architectures.",
+        "Practical full stack development projects and professional methodologies."
+      ]
+    },
+    "exp-3": {
+      "role": "Frontend Developer (Internship)",
+      "description": [
+        "Internship as a junior frontend developer at a technology consultancy.",
+        "Development of enterprise applications using Angular as the main framework.",
+        "Collaboration with development teams using agile methodologies.",
+        "Implementation of reusable components and frontend architecture improvements."
+      ]
+    },
+    "exp-4": {
+      "role": "Full Stack Developer",
+      "description": [
+        "Development of internal and client web solutions at a marketing and advertising agency.",
+        "Implementation of applications with Next.js, Tailwind CSS, Node.js, and Express.",
+        "Integration of backend services like Appwrite, Supabase, Firebase, and Stripe for payments and authentication.",
+        "Collaboration on digital marketing projects with a focus on performance and user experience."
+      ]
+    }
+  },
+  "about": {
+    "subtitle": "Meet the Developer Behind the Code",
+    "desc": {
+      "0": "Hey! I’m Henrry 👋, a web developer who enjoys building sleek, interactive websites that actually work well.",
+      "1": "I specialize in JavaScript, React, and Next.js, but I also love diving into the backend with Node.js and designing database schemas that don't fall apart 😅.",
+      "2": "I’m big on clean UI, good UX, and writing code that’s not a complete nightmare to debug.",
+      "3": "Outside of dev work, you'll find me trying to get the perfect shot with my camera 📸, going for a run to clear my head 🏃‍♂️, or drooling over the latest tech gadgets I probably don't need 💸."
+    }
+  },
+  "projects": {
+    "gsap": {
+      "desc": {
+        "0": "Apple-style 3D website built with React, Three.js, GSAP, and TailwindCSS.",
+        "1": "Showcase products in immersive 3D scenes, scroll-animated models, and pinned sections.",
+        "2": "Featuring responsive design, smooth timeline animations, and visually striking image transitions."
+      }
+    },
+    "signalist": {
+      "desc": {
+        "0": "AI-powered modern stock market app built with Next.js, Shadcn, Better Auth, and Inngest!",
+        "1": "Track real-time prices, set personalized alerts, explore company insights, and manage watchlists.",
+        "2": "Event-driven workflows power automated alerts, AI-driven daily digests, and sentiment analysis."
+      }
+    },
+    "snapcast": {
+      "desc": {
+        "0": "Full Stack Screen Recording & Video Sharing Platform built with Next.js and Bunny.net.",
+        "1": "Includes user authentication, screen recording, video uploads, and AI-generated transcripts.",
+        "2": "Users can set videos as public or private and share them via a link."
+      }
+    },
+    "tourvisto": {
+      "desc": {
+        "0": "A modern travel agency platform with an admin dashboard and public site. Generate AI-powered trip itineraries based on country, travel style, interests, group type, and budget — and book trips with ease.",
+        "1": "Features: AI-powered trip itinerary generator, Trip booking functionality, Admin dashboard with trip and user management, User growth metrics and trip analytics, Interactive charts and trip statistics table, Detailed trip overview, Responsive UI with a modern design, Secure user authentication and data management, Modular code architecture with reusable components."
+      }
+    }
+  }
+}

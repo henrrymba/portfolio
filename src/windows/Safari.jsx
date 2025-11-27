@@ -10,8 +10,11 @@ import {
   Share,
   ShieldHalf,
 } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const Safari = () => {
+  const { t } = useTranslation();
+
   return (
     <>
       <div id="window-header">
@@ -32,7 +35,7 @@ const Safari = () => {
             <input
               type="text"
               className="flex-1 "
-              placeholder="Search or enter website name"
+              placeholder={t("safari.searchPlaceholder")}
             />
           </div>
         </div>
@@ -44,11 +47,10 @@ const Safari = () => {
         </div>
       </div>
       <div className="blog max-h-[600px] overflow-y-auto overflow-x-hidden">
-        <h2>My experience</h2>
+        <h2>{t("safari.experience")}</h2>
         <div className="space-y-8">
           <Experience />
         </div>
-
       </div>
     </>
   );

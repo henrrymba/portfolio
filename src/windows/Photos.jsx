@@ -4,9 +4,11 @@ import WindowWrapper from "#hoc/WindowWrapper";
 import { WindowControls } from "#components";
 import useWindowStore from "#store/window";
 import { gallery, photosLinks } from "#constants";
+import { useTranslation } from "react-i18next";
 
 const Photos = () => {
   const { openWindow } = useWindowStore();
+  const { t } = useTranslation();
 
   return (
     <>
@@ -21,13 +23,13 @@ const Photos = () => {
 
       <div className="flex w-full">
         <div className="sidebar">
-          <h2>Photos</h2>
+          <h2>{t("photos.title")}</h2>
 
           <ul>
             {photosLinks.map(({ id, icon, title }) => (
               <li key={id}>
                 <img src={icon} alt={title} />
-                <p>{title}</p>
+                <p>{t(`photos.${title.toLowerCase()}`)}</p>
               </li>
             ))}
           </ul>

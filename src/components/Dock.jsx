@@ -5,10 +5,12 @@ import gsap from "gsap";
 import { dockApps } from "#constants/index.js";
 import { useGSAP } from "@gsap/react";
 import useWindowStore from "#store/window.js";
+import { useTranslation } from "react-i18next";
 
 const Dock = () => {
   const { openWindow, closeWindow, windows } = useWindowStore();
   const dockRef = useRef(null);
+  const { t } = useTranslation();
 
   useGSAP(() => {
     const dock = dockRef.current;
@@ -48,7 +50,7 @@ const Dock = () => {
           y: 0,
           duration: 0.3,
           ease: "power1.out",
-        }),
+        })
       );
 
     dock.addEventListener("mousemove", handleMouseMove);
@@ -85,16 +87,16 @@ const Dock = () => {
             <button
               type="button"
               className="dock-icon"
-              aria-label={name}
+              aria-label={t(`dock.${id}`)}
               data-tooltip-id="dock-tooltip"
-              data-tooltip-content={name}
+              data-tooltip-content={t(`dock.${id}`)}
               data-tooltip-delay-show={150}
               disabled={!canOpen}
               onClick={() => toggleApp({ id, canOpen })}
             >
               <img
                 src={`/images/${icon}`}
-                alt={name}
+                alt={t(`dock.${id}`)}
                 className={canOpen ? "" : "opacity-60"}
               />
             </button>

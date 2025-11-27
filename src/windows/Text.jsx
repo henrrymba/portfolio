@@ -2,8 +2,11 @@ import WindowWrapper from "#hoc/WindowWrapper.jsx";
 import { WindowControls } from "#components";
 import useWindowStore from "#store/window.js";
 
+import { useTranslation } from "react-i18next";
+
 const Text = () => {
   const { windows } = useWindowStore();
+  const { t } = useTranslation();
   const data = windows.txtfile?.data;
 
   if (!data) return null;
@@ -24,12 +27,12 @@ const Text = () => {
           </div>
         ) : null}
 
-        {subtitle ? <h3 className="text-lg font-bold">{subtitle}</h3> : null}
+        {subtitle ? <h3 className="text-lg font-bold">{t(subtitle)}</h3> : null}
 
         {Array.isArray(description) && description.length > 0 ? (
           <div className="space-y-3 leading-relaxed text-base text-gray-800">
             {description.map((para, idx) => (
-              <p key={idx}>{para}</p>
+              <p key={idx}>{t(para)}</p>
             ))}
           </div>
         ) : null}

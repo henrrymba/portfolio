@@ -4,12 +4,14 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 import { Calendar } from "lucide-react";
 import { experiences } from "../constants/index.js";
+import { useTranslation } from "react-i18next";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const Experience = () => {
   const containerRef = useRef(null);
   const lineRef = useRef(null);
+  const { t } = useTranslation();
 
   useGSAP(
     () => {
@@ -107,7 +109,7 @@ const Experience = () => {
 
             <div className="experience-content opacity-0">
               <h3 className="text-3xl font-bold text-neutral-900 mb-2 tracking-tight">
-                {exp.role}
+                {t(`experience.${exp.id}.role`)}
               </h3>
 
               <div className="flex flex-wrap items-center gap-3 mb-6">
@@ -126,10 +128,12 @@ const Experience = () => {
 
               <div className="space-y-4">
                 <h4 className="text-sm uppercase tracking-wider text-neutral-400 font-semibold mb-3">
-                  Responsibilities
+                  {t("experience.responsibilities")}
                 </h4>
                 <ul className="space-y-3">
-                  {exp.description.map((desc, i) => (
+                  {t(`experience.${exp.id}.description`, {
+                    returnObjects: true,
+                  }).map((desc, i) => (
                     <li key={i} className="flex items-start gap-3 group">
                       <span
                         className="mt-2 w-1.5 h-1.5 rounded-full flex-shrink-0 transition-colors duration-300 group-hover:scale-125"

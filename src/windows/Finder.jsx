@@ -5,10 +5,12 @@ import { locations } from "#constants/index.js";
 import useLocationStore from "#store/location.js";
 import clsx from "clsx";
 import useWindowStore from "#store/window.js";
+import { useTranslation } from "react-i18next";
 
 const Finder = () => {
   const { openWindow } = useWindowStore();
   const { activeLocation, setActiveLocation } = useLocationStore();
+  const { t } = useTranslation();
 
   const openItem = (item) => {
     if (item.fileType === "pdf") return openWindow("resume");
@@ -29,11 +31,13 @@ const Finder = () => {
             key={item.id}
             onClick={() => setActiveLocation(item)}
             className={clsx(
-              item.id === activeLocation.id ? "active" : "not-active",
+              item.id === activeLocation.id ? "active" : "not-active"
             )}
           >
             <img src={item.icon} className="w-4" alt={item.name} />
-            <p className="text-sm font-medium truncate">{item.name}</p>
+            <p className="text-sm font-medium truncate">
+              {item.type ? t(`finder.folders.${item.type}`) : item.name}
+            </p>
           </li>
         ))}
       </ul>
@@ -49,8 +53,8 @@ const Finder = () => {
 
       <div className="bg-white flex h-full">
         <div className="sidebar">
-          {renderList("Favourites", Object.values(locations))}
-          {renderList("My Projects", locations.work.children)}
+          {renderList(t("finder.favourites"), Object.values(locations))}
+          {renderList(t("finder.myProjects"), locations.work.children)}
         </div>
 
         <ul className="content">

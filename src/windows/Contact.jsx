@@ -1,20 +1,23 @@
 import WindowWrapper from "#hoc/WindowWrapper.jsx";
 import { socials } from "#constants/index.js";
 import { WindowControls } from "#components";
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
+  const { t } = useTranslation();
+
   return (
     <>
       <div id="window-header">
         <WindowControls target="contact" />
-        <h2>Contact Me</h2>
+        <h2>{t("contact.title")}</h2>
       </div>
 
       <div className="p-5 space-y-5">
         <img src="/images/me.jpeg" alt="Henrry" className="w-30 rounded-xl" />
 
-        <h3>Let's Connect</h3>
-        <p>Got an idea? A bug to squash? Or just wanna talk tech? I'm in.</p>
+        <h3>{t("contact.connect")}</h3>
+        <p>{t("contact.description")}</p>
         <p>
           <a href="mailto:contact@henrry.es">contact@henrry.es</a>
         </p>

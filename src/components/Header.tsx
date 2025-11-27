@@ -1,7 +1,16 @@
 import React from "react";
 import { LayoutGrid, FileDown } from "lucide-react";
+import LanguageSwitcher from "./LanguageSwitcher";
+import { useTranslation } from "react-i18next";
 
 export const Header: React.FC = () => {
+  const { t, i18n } = useTranslation();
+
+  const isSpanish = i18n.language.startsWith("es");
+  const cvFile = isSpanish
+    ? "Henrry_Murana_Desarrollador_FrontEnd.pdf"
+    : "Henrry_Murana_FrontEnd_Developer.pdf";
+
   return (
     <header className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-6 md:px-12 mix-blend-difference text-white pointer-events-none">
       <div className="hidden md:flex items-center justify-center opacity-80">
@@ -17,18 +26,19 @@ export const Header: React.FC = () => {
       </div>
 
       <div className="flex items-center gap-4 pointer-events-auto">
+        <LanguageSwitcher />
         <a
           href="/portfolio"
           className="hidden md:flex items-center gap-2 border border-white/30 text-white px-6 py-3 rounded-sm font-bold hover:bg-white hover:text-black transition-colors duration-300 uppercase tracking-wider text-sm"
         >
           <LayoutGrid size={18} />
-          Portfolio
+          {t("header.portfolio")}
         </a>
         <a
-          href="/files/resume.pdf"
-          download="Henrry_Murana_CV.pdf"
+          href={`/files/${cvFile}`}
+          download={cvFile}
           className="border border-white/30 p-3 rounded-sm hover:bg-white hover:text-black transition-colors duration-300 flex items-center justify-center"
-          title="Download CV"
+          title={t("header.downloadCV")}
         >
           <FileDown size={24} />
         </a>
