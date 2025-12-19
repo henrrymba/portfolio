@@ -141,5 +141,10 @@
         "1": "Features: AI-powered trip itinerary generator, Trip booking functionality, Admin dashboard with trip and user management, User growth metrics and trip analytics, Interactive charts and trip statistics table, Detailed trip overview, Responsive UI with a modern design, Secure user authentication and data management, Modular code architecture with reusable components."
       }
     }
+  },
+  "cookies": {
+    "message": "We use cookies to improve your experience and analyze our traffic. By clicking 'Accept', you agree to our use of cookies.",
+    "accept": "Accept",
+    "decline": "Decline"
   }
 }

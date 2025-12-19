@@ -141,5 +141,10 @@
         "1": "Características: Generador de itinerarios de viaje con IA, Funcionalidad de reserva de viajes, Panel de administración con gestión de viajes y usuarios, Métricas de crecimiento de usuarios y análisis de viajes, Gráficos interactivos y tabla de estadísticas de viajes, Resumen detallado del viaje, Interfaz de usuario adaptable con diseño moderno, Autenticación segura de usuarios y gestión de datos, Arquitectura de código modular con componentes reutilizables."
       }
     }
+  },
+  "cookies": {
+    "message": "Utilizamos cookies para mejorar tu experiencia y analizar nuestro tráfico. Al hacer clic en 'Aceptar', aceptas nuestro uso de cookies.",
+    "accept": "Aceptar",
+    "decline": "Rechazar"
   }
 }
