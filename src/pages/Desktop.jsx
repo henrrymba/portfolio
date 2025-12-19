@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import gsap from "gsap";
 import { Draggable } from "gsap/Draggable";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion as Motion, AnimatePresence } from "framer-motion";
 
 import { Dock, Home, Navbar, Welcome } from "#components";
 import {
@@ -26,7 +26,7 @@ const Desktop = () => {
       <AnimatePresence mode="wait">
         {isLoading && <LoadingScreen onComplete={() => setIsLoading(false)} />}
       </AnimatePresence>
-      <motion.div
+      <Motion.div
         layoutId="portfolio-expand"
         className="fixed inset-0 z-[100] bg-white"
         initial={{ opacity: 1 }}

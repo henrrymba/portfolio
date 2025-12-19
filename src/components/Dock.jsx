@@ -90,7 +90,7 @@ const Dock = () => {
   return (
     <section id="dock">
       <div ref={dockRef} className="dock-container">
-        {dockApps.map(({ id, name, icon, canOpen }) => (
+        {dockApps.map(({ id, icon, canOpen }) => (
           <div key={id} className="relative flex justify-center">
             <button
               type="button"
